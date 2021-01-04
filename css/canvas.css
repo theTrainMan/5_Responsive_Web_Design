@@ -20,13 +20,8 @@ main {
     height: 100%;
 }
 
-h1 {
-    text-align: center;
-}
-
 h2 {
     color: tomato;
-    padding-left: 50px;
 }
 
 a#menu svg {

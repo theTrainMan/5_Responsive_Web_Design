@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website - Udacity</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="./css/canvas.css">
+</head>
+
+<body>
+    <h1>Responsive Website - Udacity</h1>
+    <h2>Off Canvas Layout</h2>
+    <hr>
+
+    <nav id="drawer" class="dark_blue">
+        <h2>Off Canvas</h2>
+        <p>Click outside the drawer to close</p>
+    </nav>
+    <main class="light_blue">
+        <a id="menu">
+            <p>Click on the menu icon to open th drawer</p>
+        </a>
+    </main>
+
+    <br>
+    <hr>
+    <br>
+    <a href="index.html" class="footer">Index Page</a>
+    <a href="fluid.html" class="footer">fluid Page</a>
+    <a href="shifter.html" class="footer">shifter Page</a>
+
+
+    <script>
+        const menu = document.querySelector('#menu');
+        const main = document.querySelector('main');
+        const drawer = document.querySelector('#drawer');
+
+        menu.addEventListener('click', function(e) {
+            drawer.classList.toggle('open');
+            e.stopPropagation();
+        });
+        main.addEventListener('click', function() {
+            drawer.classList.remove('open');
+        })
+    </script>
+
+</body>
+
+</html>
